@@ -11,7 +11,9 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -38,6 +40,7 @@ fun ContactsScreen(modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxSize()
             .background(FondoPerfil)
+            .verticalScroll(rememberScrollState())
             .padding(horizontal = 12.dp)
     ) {
         // Barra de arriba: Ordenar - Contactos - +
@@ -97,9 +100,16 @@ fun ContactsScreen(modifier: Modifier = Modifier) {
             FilaContacto("Maurix", "últ. vez hace 5 minutos", Color(0xFFE57373))
             FilaContacto("Rodri C", "últ. vez hace 10 minutos", Color(0xFFBA68C8))
             FilaContacto("Ba bunny", "últ. vez hace 55 minutos", Color(0xFF64B5F6))
+            FilaContacto("Rodo", "últ. vez hace 1 hora", Color(0xFF9C27B0))
             FilaContacto("Tito", "últ. vez hace 1 hora", Color(0xFF4DB6AC))
+            FilaContacto("Alexis Marechal", "últ. vez hace 2 horas", Color(0xFF26A69A))
             FilaContacto("Peso Pluma", "últ. vez hace 2 horas", Color(0xFFFFB74D))
+            FilaContacto("Jefri", "últ. vez hace 3 horas", Color(0xFFFF9800))
+            FilaContacto("Charlie K", "últ. vez hace 3 horas", Color(0xFFF06292))
+            FilaContacto("Kadir", "en línea", Color(0xFF4CAF50))
         }
+
+        Spacer(Modifier.height(12.dp))
     }
 }
 
