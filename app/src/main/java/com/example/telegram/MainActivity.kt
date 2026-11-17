@@ -94,7 +94,7 @@ fun MainPager() {
                 0 -> ChatsScreen()     // Pantalla de Chats     → ui/screens/ChatsScreen.kt
                 1 -> ContactsScreen()  // Pantalla de Contactos → ui/screens/ContactsScreen.kt
                 2 -> SettingsScreen()  // Pantalla de Ajustes   → ui/screens/SettingsScreen.kt
-                3 -> ProfileScreen()   // Pantalla de Perfil    → ui/screens/ProfileScreen.kt
+                3 -> ProfileScreen("Ernesto Berthon", true, "+591 7(7) 544385")   // Pantalla de Perfil    → ui/screens/ProfileScreen.kt
             }
         }
     }

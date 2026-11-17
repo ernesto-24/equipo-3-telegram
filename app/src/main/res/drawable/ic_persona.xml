@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Silueta simple de persona (foto de perfil por defecto, estilo WhatsApp) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- cabeza -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,4.5a4.5,4.5 0,1 1,0 9a4.5,4.5 0,1 1,0 -9z" />
+    <!-- hombros: llegan al borde de abajo para que el círculo los recorte -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,15.5c-5,0 -9,2.8 -9,6.5V24h18v-2c0,-3.7 -4,-6.5 -9,-6.5z" />
+</vector>
