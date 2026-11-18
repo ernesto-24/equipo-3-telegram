@@ -60,7 +60,6 @@ private enum class Tab(@StringRes val label: Int, @DrawableRes val icon: Int) {
     CHATS(R.string.tab_chats, R.drawable.ic_tab_chats),
     CONTACTS(R.string.tab_contacts, R.drawable.ic_tab_contacts),
     CALLS(R.string.tab_calls, R.drawable.ic_tab_calls),
-    SETTINGS(R.string.tab_settings, R.drawable.ic_tab_settings),
     PROFILE(R.string.tab_profile, R.drawable.ic_tab_profile),
 }
 
@@ -96,8 +95,7 @@ fun MainPager() {
                 0 -> ChatsScreen()
                 1 -> ContactsScreen()
                 2 -> CallsScreen()
-                3 -> SettingsScreen()
-                4 -> ProfileScreen("Ernesto Berthon", true, "+591 7(7) 544385")
+                3 -> ProfileScreen("Ernesto Berthon", true, "+591 7(7) 544385")
             }
         }
     }
