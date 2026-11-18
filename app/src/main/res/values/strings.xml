@@ -4,6 +4,7 @@
     <!-- Barra de pestañas inferior -->
     <string name="tab_chats">Chats</string>
     <string name="tab_contacts">Contactos</string>
+    <string name="tab_calls">Llamadas</string>
     <string name="tab_settings">Ajustes</string>
     <string name="tab_profile">Perfil</string>
 </resources>
